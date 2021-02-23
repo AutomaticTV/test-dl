@@ -20,10 +20,8 @@ if __name__ == '__main__':
 
     split_path = Path(args.video_path)
 
-    print('TODO: Import model, define distance and optimizer')
+    print('TODO: Load trained model)
     my_model = 'MyModel()'
-    distance = 'MyDistance()'
-    optimizer = 'My optimizer'
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print('Using: ' + str(device))
@@ -32,7 +30,5 @@ if __name__ == '__main__':
     model_path = Path(args.model_path)
     my_model_name = 'my_model'
     model_path = model_path / my_model_name
-
-    print('TODO: load model')
 
     test()
